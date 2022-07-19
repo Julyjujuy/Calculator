@@ -13,17 +13,17 @@ namespace Calculator
         {
 
 
-            int globalArea = 0;
+            double globalArea = 0;
             while (true)
             {
                 Console.WriteLine("Enter Floor Width");
                 string userInputWidth = Console.ReadLine();
-                int NewUserInputWidth = Convert.ToInt32(userInputWidth);
+                double NewUserInputWidth = Convert.ToDouble(userInputWidth);
 
                 Console.WriteLine("Enter Floor Lenght");
                 string userInputLenght = Console.ReadLine();
-                int NewUserInputLenght = Convert.ToInt32(userInputLenght);
-                int squareMeters = NewUserInputWidth * NewUserInputLenght;
+                double NewUserInputLenght = Convert.ToDouble(userInputLenght);
+                double squareMeters = NewUserInputWidth * NewUserInputLenght;
 
                 globalArea += squareMeters;
                 Console.WriteLine("Is there any more Area to cover? 'Y' to add");
@@ -34,13 +34,12 @@ namespace Calculator
                     break;
                 }
             }
-            //Console.WriteLine("Please Insert the Cost of 1 unit of Flooring");
-            //string userInputUnitCost = Console.ReadLine();
+
             Console.WriteLine("Enter Cost per Unit");
             string userInputCost = Console.ReadLine();
-            int NewUserInputCost = Convert.ToInt32(userInputCost);
+            double NewUserInputCost = Convert.ToDouble(userInputCost);
 
-            int CostOfFlooring = globalArea * NewUserInputCost;
+            double CostOfFlooring = globalArea * NewUserInputCost;
 
 
             //decimal costPerSqmt = 86.00m / 20.00m;
