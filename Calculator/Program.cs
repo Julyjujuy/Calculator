@@ -49,7 +49,9 @@ namespace Calculator
 
 
             Console.WriteLine(CostOfFlooring);
+            Console.WriteLine("Press any key to close this window . . .");
             Console.ReadLine();
+
 
 
         }
